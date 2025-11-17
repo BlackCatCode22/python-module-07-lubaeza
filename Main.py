@@ -127,3 +127,31 @@ print()
 for bear in list_of_bears:
   print(bear.animal_id + ", " + bear.name + "; birthdate: " + str(bear.birth_date) + "; " + bear.color + 
         "; " + bear.sex + "; " + bear.weight + "; " + bear.originating_zoo + "; arrived: " + str(bear.date_arrival))
+
+#transferring to .txt file
+with open("zooPopulation.txt", "w") as output:
+    output.write("Zookeeper's Challenge Zoo Population\n\n")
+
+    output.write("Lion Habitat:\n\n")
+    for lion in list_of_lions:
+        output.write(lion.animal_id + ", " + lion.name + "; birthdate: " + str(lion.birth_date) + "; " + lion.color + 
+        "; " + lion.sex + "; " + lion.weight + "; " + lion.originating_zoo + "; arrived: " + str(lion.date_arrival) + "\n")
+    output.write("\n")
+
+    output.write("Tiger Habitat:\n\n")
+    for tiger in list_of_tigers:
+        output.write(tiger.animal_id + ", " + tiger.name + "; birthdate: " + str(tiger.birth_date) + "; " + tiger.color + 
+        "; " + tiger.sex + "; " + tiger.weight + "; " + tiger.originating_zoo + "; arrived: " + str(tiger.date_arrival) + "\n")
+    output.write("\n")
+
+    output.write("Hyena Habitat:\n\n")
+    for hyena in list_of_hyenas:
+        output.write(hyena.animal_id + ", " + hyena.name + "; birthdate: " + str(hyena.birth_date) + "; " + hyena.color + 
+        "; " + hyena.sex + "; " + hyena.weight + "; " + hyena.originating_zoo + "; arrived: " + str(hyena.date_arrival) + "\n")
+    output.write("\n")
+
+    output.write("Bear Habitat:\n\n")
+    for bear in list_of_bears:
+        output.write(bear.animal_id + ", " + bear.name + "; birthdate: " + str(bear.birth_date) + "; " + bear.color + 
+        "; " + bear.sex + "; " + bear.weight + "; " + bear.originating_zoo + "; arrived: " + str(bear.date_arrival) + "\n")
+    output.write("\n")
